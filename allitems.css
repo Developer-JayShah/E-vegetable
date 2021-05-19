@@ -1,0 +1,244 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ }
+ :root{
+    --main-color: #89C74A;
+    --dark: #000;
+    --dark-light: #2C3023;
+    --white: #ffffff;
+    --light: #88c74ab2;
+}
+ .container{
+     max-width: 1170px;
+     margin: auto;
+     width: 100%;
+ }
+ .veg-title h2{
+    margin: 2% 0 2%;
+    font-family: 'Lemonada', cursive;
+    font-size: 1.8em;
+    color: var(--main-color);
+    text-align: center;
+    text-shadow: 0 15px 15px var(--main-color);
+}
+ /*-----------------------------------------Navbar-------------------------------------*/
+ .navbar {
+    position: sticky;
+    top: 0;
+    bottom: -14%;
+    z-index: 15;
+    font-family: 'Lemonada', cursive;
+}
+
+.navigation nav {
+
+    height: 80px;
+    background: var(--main-color);
+    /* width: 100%; */
+}
+
+nav h1 {
+    font-size: 2.2em;
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    font-weight: 100;
+    color: var(--white);
+    letter-spacing: 3px;
+    font-family: 'Poppins', sans-serif;
+}
+nav h1 a{
+    color: var(--white);
+    text-decoration: none;
+}
+nav ul {
+    float: right;
+    margin-right: 25px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style-type: none;
+    line-height: 80px;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--white);
+    padding: 5px 0;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    position: relative;
+    letter-spacing: 1px;
+}
+
+nav ul li a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    height: 2px;
+    width: 100%;
+    background: var(--white);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .4s linear;
+}
+
+nav ul li a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+label #btn,
+label #cancel {
+    color: var(--white);
+    font-size: 2em;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+.shop{
+    float: right;
+}
+.shop i{
+    padding: 30px 30px 0 0;
+    font-size: 1.3em;
+    color: var(--white);
+    cursor: pointer;
+}
+
+/*Media*/
+@media (max-width: 1118px) {
+    nav h2 {
+        left: 10%;
+    }
+}
+
+@media (max-width: 944px) {
+    nav h2 {
+        left: 6%;
+        top: 20px;
+    }
+/* 
+    nav ul li a {
+        font-size: 17px;
+    } */
+}
+
+@media (max-width: 860px) {
+    label #btn {
+        display: block;
+    }
+    .navigation nav {
+
+        height: 80px;
+        background: var(--light);
+        width: 100%;
+    }
+  nav ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: var(--light);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    /* nav ul li a {
+        font-size: 2em;
+    } */
+
+    #check:checked~ul {
+        left: 0;
+    }
+
+    #check:checked~label #btn {
+        display: none;
+    }
+
+    #check:checked~label #cancel {
+        display: block;
+    }
+}
+ /*----------------------------------------Products-------------------------------------*/
+ .pro{
+   border: 1px solid rgba(0, 0, 0, 0.089);
+   border-radius: 5px;
+ }
+ .product{
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+     grid-gap: 5px;
+ }
+ .pro img{
+     width: 100%;
+     cursor: pointer;
+ }
+ .pro{
+     padding: 10px;
+     position: relative;
+    margin: 10px;
+ }
+ .products h1{
+     text-align: center;
+ }
+ .product-details{
+    text-align: center;
+    padding: 30px 0;
+    font-size: 1em;
+    margin-top: 15px;
+ }
+ .product-details span{
+     background-color: var(--main-color);
+     border-radius: 50px;
+     padding: 5px 15px;
+     cursor: pointer;
+     color: var(--white);
+ }
+ .product-details h3{
+     padding: 30px 0 25px;
+     font-size: 1.2em;
+     font-weight: 500;
+  
+ }
+ .product-details i{
+     padding: 0 0 25px;
+     font-size: 1.2em;
+ }
+ .product-details h4{
+     padding: 0 0 25px;
+     font-size: 1.2em;
+     font-weight: 500;
+ }
+ .product-details button{
+     padding: 10px 15px;
+     border-radius: 50px;
+     border: none;
+     outline: none;
+     cursor: pointer;
+ }
+ .pro:hover{
+     border: 3px solid var(--main-color);
+ }
+ .rating button:hover{
+    box-shadow: 0 4px 5px var(--main-color);
+    color: var(--main-color);
+ }
