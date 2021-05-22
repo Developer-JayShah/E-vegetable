@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+  outline: none;
+    box-sizing: border-box;
+ }
+ :root{
+    --main-color: #89C74A;
+    --dark: #000;
+    --dark-light: #2C3023;
+    --white: #ffffff;
+    --light: #88c74ab2;
+}
+ .container{
+     max-width: 1170px;
+     margin: auto;
+     width: 100%;
+ }
+ .veg-title h2{
+    margin: 2% 0 2%;
+    font-family: 'Lemonada', cursive;
+    font-size: 1.8em;
+    color: var(--main-color);
+    text-align: center;
+    text-shadow: 0 15px 15px var(--main-color);
+}
+
+
+.products p{
+    text-align: center;
+    margin-bottom: 15px;
+    font-family: 'Lemonada', cursive;
+    font-size: 1.2em;
+}
+

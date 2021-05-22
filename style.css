@@ -59,43 +59,24 @@ html {
 }
 
 /*--------------------------------------Login Signup---------------------------------*/
-/* .top-nav {
-
-    height: 40px;
-    background: var(--white);
-    position: relative;
-    width: 100%;
+.top-nav{
+   display: flex;
+   justify-content: space-between;
+   /* background: chartreuse; */
+   padding: 10px 20px;
 }
-.top-nav ul li {
-    display: inline-block;
-    list-style-type: none;
-    line-height: 80px;
-    margin: 0 15px;
-}
-.top-nav h5 {
-    font-size: 0.8em;
-    position: absolute;
-    top: 25%;
-    left: 10%;
-    color: var(--dark);
+.mobile h5{
+    font-size: 1em;
     font-weight: 500;
-    letter-spacing: 1px;
-}
+    color: var(--dark);
 
-.top-nav ul {
-    float: right;
-    margin-right: 25px;
 }
-.top-nav ul li a {
+.login a{
     text-decoration: none;
     color: var(--dark);
-    padding: 5px 0;
-    font-size: 0.8em;
-    text-transform: uppercase;
-    position: relative;
-    letter-spacing: 1px;
-    top: -20px;
-} */
+}
+
+
 /*--------------------------------------Navbar----------------------------------------*/
 .navbar {
     position: sticky;
@@ -116,7 +97,7 @@ nav h1 {
     font-size: 2.2em;
     position: absolute;
     top: 15%;
-    left: 10%;
+    left: 1%;
     font-weight: 100;
     color: var(--white);
     letter-spacing: 3px;
@@ -270,7 +251,62 @@ label #cancel {
         display: block;
     }
 }
+/*---------------------------------------search box----------------------------------*/
 
+.searchbox form{
+    display: flex;
+    justify-content: center;
+}
+.searchbox{
+    padding: 15px;
+}
+
+.searchbox input{
+    font-size: 20px;
+    box-sizing: border-box;
+}
+.searchbox input[type="text"]{
+        background: var(--white);
+         width: 100%;
+        height: 50px;
+    border: none;
+    border: 1px solid rgba(0, 0, 0, 0.246);
+    outline: none;
+    padding: 0 25px;
+}
+.searchbox select{
+    border: none;
+    border: 1px solid rgba(0, 0, 0, 0.246);
+    outline: none;
+    background: var(--white);
+    font-size: 18px;
+    padding: 15px 16px 11px;
+    border-right: 1px solid var(--white);
+}
+.searchbox i{
+    position: relative;
+    padding: 17px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: var(--main-color);
+    color: var(--white);  
+}
+.inputbox{
+    max-width: 600px;
+    height: 36px;
+    background-color: var(--white);
+    display: flex;
+    flex-grow: 1; 
+}
+@media only screen and (max-width: 428px){
+    .searchbox select{
+        display: none;
+    }
+    .searchbox{
+        padding: 15px 15px 30px;
+    }
+}
 /*-------------------------------------Product Banner---------------------------------*/
 .slide img {
     width: 100%;

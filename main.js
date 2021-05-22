@@ -37,7 +37,7 @@ $(document).ready(function(){
 });
 /*------------------------------------------------------------------------------*/
 
-    var countDate = new Date('May 22, 2021 00:00:00').getTime();
+    var countDate = new Date('May 25, 2021 00:00:00').getTime();
 
     function newYear(){
         var now = new Date().getTime();
