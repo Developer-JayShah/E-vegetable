@@ -37,7 +37,7 @@ $(document).ready(function(){
 });
 /*------------------------------------------------------------------------------*/
 
-    var countDate = new Date('May 25, 2021 00:00:00').getTime();
+    var countDate = new Date('May 28, 2021 00:00:00').getTime();
 
     function newYear(){
         var now = new Date().getTime();
@@ -89,3 +89,16 @@ $(document).ready(function(){
          
 });
 });  
+
+/*-------------------------------------Scroll top-----------------------------------*/
+window.addEventListener('scroll', function(){
+    var scroll = document.querySelector('.scrollTop');
+    scroll.classList.toggle("active", window.scrollY > 500)
+  })
+  
+  function scrollToTop(){
+      window.scrollTo({
+         top: 0,
+         behavior: 'smooth'
+      })
+  }

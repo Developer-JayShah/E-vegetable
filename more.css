@@ -22,7 +22,7 @@
     font-size: 1.8em;
     color: var(--main-color);
     text-align: center;
-    text-shadow: 0 15px 15px var(--main-color);
+    text-shadow: 0 5px 16px var(--main-color);
 }
 
 
